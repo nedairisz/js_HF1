@@ -34,14 +34,14 @@ export const faLista = [
     }
 ];
 
-export function legmagasabb(faLista){
-    let lgmgsbb = null;
-    for (let i = 0; i < faLista.length; i++) {
-        if (lgmgsbb === null || faLista[i].magassag > lgmgsbb.magassag) {
-            lgmgsbb = faLista[i];
+export function legmagasabb(lista){
+    let lmINdex = 0;
+    for (let i = 0; i < lista.length; i++) {
+        if (lista[lmINdex].magassag < lista[i].magassag) {
+            lmINdex = i
         }
     }
-    return lgmgsbb;
+    return lmINdex;
 } 
 
 export function atlagEletkor(faLista){
@@ -52,3 +52,4 @@ export function atlagEletkor(faLista){
     let atlag=gyujto/faLista.length
     return atlag
 }
+

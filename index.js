@@ -10,9 +10,9 @@ const osszeg = osszegzes(szam);
 console.log(`Az összeg az 1-től ${szam}-ig: ${osszeg}`);
 
 
-const lgmgsbb = legmagasabb(faLista);
+const lmIndex= legmagasabb(faLista);
 console.log(faLista)
-console.log(`A legmagasabb fa: ${lgmgsbb.nev}`)
+console.log(`A legmagasabb fa indexe: ${lmIndex}`)
 
 const atlag = atlagEletkor(faLista)
 console.log(`A fák átagéletkora: ${atlag} év`);
